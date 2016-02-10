@@ -8,7 +8,7 @@ $testArray[] = "fifty-two";
 
 var_dump($testArray);
 
-function arraySwap(array $inArray)
+function arrayFlip(array $inArray)
 {
   $rtnArr = Array();
   for($i = count($inArray)-1; $i >= 0; $i--)
@@ -18,7 +18,7 @@ function arraySwap(array $inArray)
   return $rtnArr;
 }
 
-$newTestArray = arraySwap($testArray);
+$newTestArray = arrayFlip($testArray);
 
 var_dump($newTestArray);
 
